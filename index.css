@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(20, 20, 20);
+    text-decoration: none;
+    list-style-type:none;
+}
+.container{
+    background-color: rgb(29, 28, 28);
+    border: 2px solid rgb(235, 11, 11);
+}
+/* Main title of webpage */
+.one{
+    font-style: 'Times New Roman';
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #064ee9;
+    margin-top: 1.5rem;
+    text-shadow: 1px 2px 5px rgba(182, 224, 219, 0.732);
+}
+/* Quote heading */
+.two{
+    color: orangered;
+    text-align: center;
+    font-style: oblique;
+    margin: 3rem 0;
+}
+.welcome {
+    color:rgb(213, 216, 13);
+    text-align: center;
+    font-size : 30px; 
+    font-weight:100px ;
+    text-shadow: 1px 2px 5px rgba(182, 224, 219, 0.732);
+}
+/* styling nav bar */
+.menu-bar {
+    display:flex;
+     flex-direction:row;
+     justify-content:center ;
+     align-items: center;
+     margin: 3rem 0rem;
+
+}
+.nav a{
+    background-color: rgb(17, 233, 71);
+    box-sizing: content-box;
+    border-radius: 5px;
+    padding:.5rem ;
+    margin-right: 1.5rem;
+    color: rgb(52, 8, 245);
+    font-weight: 900;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px white;
+} 
+
+/* media query for responsiveness */
+@media only screen and (max-width: 715px) {
+    .nav {
+        display: block;
+        width: 100%;
+    }
+    ul li {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .nav {
+        display: block;
+        width: 100%;
+    }
+    ul li {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+}
+          /*first image*/
+.first-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-img img{
+    height: 17rem;
+    width: 20rem;
+    margin: 2rem 0rem 2rem 0rem;
+    border: 3px solid rgb(194, 95, 29);
+    box-shadow: 5px 5px 5px white ,-5px -5px 5px white;
+    transition: all 1s linear;
+}
+.first-img img:hover {
+    transform: scale(1.2);
+}
+#three{
+    display: flex;
+    flex-wrap: wrap;
+}
+           /*health and fitness heading*/
+.hf{
+    color: rgb(231, 92, 169);
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 2rem;
+   
+}
+             /* Blog post heading*/
+.hb{
+    position: relative;
+    text-align: center;
+    color: aqua;
+    font-weight: 700;
+    font-size:2rem ;
+    margin: 20px 0px 20px 0px;
+    text-shadow: 1px 2px 5px rgba(182, 224, 219, 0.732);
+}
+.blog {
+    border: 2px solid aquamarine;
+    padding:4rem;
+    margin: 8rem 3rem;
+    width: 80%;
+    position: relative;
+    left:8%;
+   
+}
+           /*Blog images*/
+.img img {
+    width: 20rem;
+    height:12rem;
+    margin:0  1.3rem 1.3rem 0;
+    float: left;
+    border: .1rem  solid #ececec;
+    border-radius: 3px;
+    transition: 1s;
+}
+.img img:hover {
+    transform: scale(1.1);
+}
+       /* heading for images*/
+.head {
+    color:#dceb12;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    font-weight: 100px;
+    
+}
+   /*content for website*/
+.content{
+  justify-content: center;
+}
+P {
+    color: white;
+}
+           /* responsiveness for images*/
+@media screen and (max-width:700px) {
+    .img img {
+        width: 70%;
+        display: block;
+       
+    }
+    .content{
+        display: inline-block;
+      }
+}
+           /* mark for all content*/
+mark {
+    color:rgb(229, 236, 121) ;
+}
+
+
+        /* About me */
+.aboutme{
+    font-family:'Times New Roman', Times, serif;
+    border: 3px solid rgb(41, 241, 181);
+    padding:2rem;
+    margin:2em; 
+
+}
+
+.head-5{
+    margin-top: 3rem;
+    color: rgb(23, 219, 219);
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 1px 2px 5px rgba(246, 243, 243, 0.732);
+}
+
+
+/*Contact section  styling and  creating contact form */
+.contactsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.heading{
+
+    color: #15eee3;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 20px;
+    text-shadow: 1px 2px 5px rgb(246, 243, 243, 0.732);
+
+}
+ .fill-details{
+    background-color: transparent;
+    padding: 0px 40px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 2rem;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(34, 174, 216, 0.89);
+    width:20rem;
+    height: 22rem;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border:white 3px solid;
+    box-shadow: 5px 5px 5px rgb(212, 185, 31);
+    margin-bottom:40px ;
+}
+input,button {
+    width: 100%;
+    margin: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: #ca931d 3px solid;
+    text-align: center;
+    padding:5px 0px;
+    background-color: rgb(255, 255, 255);
+}
+input[type=submit] {
+    background-color:rgb(49, 150, 218);
+    cursor: pointer;
+    color:rgb(253, 251, 251);
+    transition: all .4s linear;
+}
+input[type=submit]:hover {
+    background-color:rgb(8, 109, 204);
+    transform: scale(1.1);
+}
+            /* Video clip*/
+.video h3 {
+    color: aqua;
+    font-size:3rem;
+    font-weight:900;
+    text-align: center;
+    margin: 3rem;
+    text-shadow: 1px 2px 5px rgba(246, 243, 243, 0.732);
+}
+.videoclip{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+   /*footer section*/
+.head-6{
+    color: #15eee3;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 20px;
+    text-align: center;
+    text-shadow: 1px 2px 5px rgb(246, 243, 243, 0.732);
+}   
+
+footer {
+    margin-top: 4rem;
+    background-color: rgb(161, 235, 127);
+    padding: 4rem 6rem;
+    border: 5px solid rgb(255, 255, 255);
+}
+.footer-container {
+    width: 100%;
+    background-color: #ADBC9F;
+}
+.footer-container h2{
+    background-color: transparent;
+    text-align: center;
+    color: rgb(0, 8, 10);
+    padding-bottom:20px ;
+}
+.footer-container ul {
+    background-color: transparent; 
+
+}
+.footer-container ul li {
+    background-color: transparent;
+
+}
+.footer-container ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.icons a{
+    color: rgb(3, 0, 0);
+    margin: 30px;
+    font-size: 2rem;
+    background-color: transparent;
+
+}
+.icons a i{
+    color: rgb(5, 1, 1);
+    background-color: transparent;
+}
+.icons a i:hover {
+     color: rgb(249, 255, 249);
+}
+.links {
+    background-color: transparent;
+}
+.footer-container ul li a:hover{
+    color: rgb(245, 243, 243);
+}
+.copyright{
+    background-color: transparent;
+    text-align: center;
+}
+.copyright p,span,a,i {
+    background-color: transparent;
+    margin-top: 1rem;
+}
+.copyright p a {
+    color: rgb(0, 0, 0);
+}
+.copyright a:hover {
+    color: rgb(146, 159, 146);
+} 
+          /*Responsiveness for icons*/
+@media screen and (max-width: 700px) {
+    .icons{
+        display: block;
+        margin: 10px;
+        align-items: center;
+    }
+}
+          /* responsiveness for nav bar*/
+@media only screen and (max-width: 715px) {
+    .nav {
+        display: block;
+        width: 100%;
+    }
+    ul li {
+        width: 100%;
+        text-align: center;
+        margin: 20px
+    }
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    margin-right: 2.5rem;
+    display: flex;
+}
+         /* blogs*/
+
+.blogmenu {
+    display: none;
+}
+
+.menu-bar ul li:hover .blogmenu {
+    display: block;
+    position: absolute;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    background-color: transparent;
+
+}
+.menu-bar ul li:hover .blogmenu ul {
+    display: block;
+    margin: 1rem;
+    background-color: transparent;
+
+
+}
+.menu-bar ul li:hover .blogmenu ul li {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    background-color: transparent;
+
+    border-bottom: 3px solid black;
+}
+.menu-bar ul li:hover .blogmenu ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .blogmenu ul li a:hover{
+    color:rgb(0, 0, 0)
+} 
